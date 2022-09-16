@@ -13,3 +13,25 @@
 	<iostream>
 	"classe.h"
 
+1663358823 source:c:\users\aluno\desktop\main.cpp
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+	"classe.h"
+	<cmath>
+
+1663353555 source:c:\users\aluno\desktop\numerogrande.cpp
+	<iostream>
+	"classe.h"
+
+1663355277 c:\users\aluno\desktop\classe.h
+
+1663353709 source:c:\users\aluno\desktop\trianguloretangulo.cpp
+	<iostream>
+	"classe.h"
+
+1663358314 source:c:\users\aluno\desktop\complexo.cpp
+	<iostream>
+	<cmath>
+	"classe.h"
+

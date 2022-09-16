@@ -5,16 +5,16 @@ class Complexo {
 private:
     double Numeroreal;
     double Numeroimaginario;
+    static int contador;
 public:
     Complexo();
     Complexo(double, double);
-
     Complexo ( const Complexo& C) {
         Numeroreal = C.Numeroreal;
         Numeroimaginario = C.Numeroimaginario;
+        contador++;
     }
-
-    ~Complexo(void) {};
+    ~Complexo(void) {contador--;}
 
     void setReal(double);
     void setImaginario(double);
@@ -22,7 +22,7 @@ public:
     double getReal() { return Numeroreal; }
     double getImaginario() { return Numeroimaginario; }
 
-    Complexo Somar (Complexo C);
+    Complexo Somar (Complexo);
     Complexo Subtrair (Complexo);
     Complexo Produto (Complexo);
     Complexo Dividir (Complexo);
