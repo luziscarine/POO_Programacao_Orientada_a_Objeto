@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1663250625 source:c:\users\breno\desktop\programação orientada a objeto (poo)\teorico\classes_basico_slide_02\funcaoinline\main.cpp
+	<iostream>
+	"inline.h"
+
+1663126765 source:c:\users\breno\desktop\programação orientada a objeto (poo)\teorico\classes_basico_slide_02\funcaoinline\inline.cpp
+	<iostream>
+	"inline.h"
+
+1663126736 c:\users\breno\desktop\programação orientada a objeto (poo)\teorico\classes_basico_slide_02\funcaoinline\inline.h
+	<iostream>
+

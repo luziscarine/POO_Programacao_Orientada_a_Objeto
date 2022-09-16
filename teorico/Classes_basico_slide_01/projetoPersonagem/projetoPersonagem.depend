@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\breno\desktop\programação orientada a objeto (poo)\teorico\classes_basico_slide_01\projetopersonagem\main.cpp
+	<iostream>
+
+1663101718 source:c:\users\breno\desktop\programação orientada a objeto (poo)\teorico\classes_basico_slide_01\projetopersonagem\personagem.cpp
+	<iostream>
+	<string>
+	"personagem.h"
+
+1663102053 c:\users\breno\desktop\programação orientada a objeto (poo)\teorico\classes_basico_slide_01\projetopersonagem\personagem.h
+	<iostream>
+	<string>
+

@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1663249665 source:c:\users\breno\desktop\programação orientada a objeto (poo)\teorico\classes_basico_slide_02\comporclasses\main.cpp
+	<iostream>
+	"composicao.h"
+
+1663249610 source:c:\users\breno\desktop\programação orientada a objeto (poo)\teorico\classes_basico_slide_02\comporclasses\composicao.cpp
+	<iostream>
+	<cstring>
+	"composicao.h"
+
+1663250073 c:\users\breno\desktop\programação orientada a objeto (poo)\teorico\classes_basico_slide_02\comporclasses\composicao.h
+	<iostream>
+	<cstring>
+
