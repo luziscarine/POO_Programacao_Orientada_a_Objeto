@@ -32,9 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="NumeroGrande.cpp" />
 		<Unit filename="classe.h" />
 		<Unit filename="complexo.cpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="trianguloRetangulo.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

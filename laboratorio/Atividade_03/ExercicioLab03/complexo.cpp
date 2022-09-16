@@ -6,7 +6,7 @@ using namespace std;
 
 Complexo :: Complexo() {
     Numeroreal = 1;
-    Numeroimaginario = sqrt(-1);
+    Numeroimaginario = 1;
 }
 
 Complexo :: Complexo (double NumReal, double NumImag) {
@@ -17,3 +17,12 @@ Complexo :: Complexo (double NumReal, double NumImag) {
 void Complexo :: exibir() {
 
 }
+
+void Complexo :: setReal(double NumReal) {
+
+}
+
+void Complexo :: setImaginario(double NumImag) {
+
+}
+
