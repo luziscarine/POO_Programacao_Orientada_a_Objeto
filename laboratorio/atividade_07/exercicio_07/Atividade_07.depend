@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1665787934 source:c:\users\aluno\desktop\atividade_07\main.cpp
+	"classe07.h"
+
+1665787888 source:c:\users\aluno\desktop\atividade_07\politico.cpp
+	"classe07.h"
+
+1665787879 c:\users\aluno\desktop\atividade_07\classe07.h
+	<iostream>
+	<cstring>
+	<stdlib.h>
+	<stdio.h>
+
+1666318686 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_07\exercicio_07\main.cpp
+	"classe07.h"
+	"PontoCirculoCilindro.h"
+
+1666317810 c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_07\exercicio_07\classe07.h
+	<iostream>
+	<cstring>
+	"stdlib.h"
+
+1666317810 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_07\exercicio_07\politico.cpp
+	"classe07.h"
+
+1666316607 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_07\exercicio_07\pontocirculocilindro.cpp
+	"PontoCirculoCilindro.h"
+
+1666316897 c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_07\exercicio_07\pontocirculocilindro.h
+	<iostream>
+
+1666313134 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_07\exercicio_07\mainpontocirculocilindro.cpp
+	"PontoCirculoCilindro.h"
+
