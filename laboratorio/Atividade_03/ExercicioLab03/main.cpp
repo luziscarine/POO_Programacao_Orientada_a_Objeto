@@ -1,154 +1,69 @@
 #include <iostream>
-#include <stdlib.h>
-#include <stdio.h>
 #include "classe.h"
-#include <cmath>
-
 using namespace std;
 
-void NumeroImaginario();            //  Exercicio 01
-void SomaNumeroImaginario();        //  Exercicio 01
-void DiferencaNumeroImaginario();   //  Exercicio 01
-void ProdutoNumeroImaginario();     //  Exercicio 01
-void RazaoNumeroImaginario();       //  Exercicio 01
-void NumeroGrande();                //  Exercicio 02
-void Triangulo();                   //  Exercicio 03
+void OperationComplexPersonalizado ();
+void TrianguloRetanguloValidacao ();
+void LongNumber ();
 
 int main()
 {
-    int opcao;
-    while (opcao != 0)
-    {
+    cout << " ---------------------------------- First Program ------------------------------------- \n" << endl;
+    OperationComplexPersonalizado();
+    cout << "\n -------------------------------- Second Program ------------------------------------ \n" << endl;
+    TrianguloRetanguloValidacao();
+    cout << "\n -------------------------------- Third Program ------------------------------------- " << endl;
+    LongNumber();
 
-        cout << "------------------------------------- Escolha um programa ----------------------------- \n" << endl;
-        cout << "0 ---> Sair\n1 ---> NumeroImaginario\n2 ---> NumeroGrande\n3 ---> Triangulo\n\nEscolha uma opcao:  ";
-        cin >> opcao;
-        system("cls");
-
-        switch(opcao)
-        {
-        case 0:
-            cout << "Programa Encerrado!" << endl;
-            break;
-        case 1:
-            NumeroImaginario();
-            break;
-        case 2:
-            NumeroGrande();
-            break;
-        case 3:
-            Triangulo();
-            break;
-        default:
-            cout << "Selecione uma opcao valida seu palhaco!" << endl;
-            getchar();
-            system("cls");
-            break;
-        }
-    }
     return 0;
 }
 
-void NumeroImaginario()
+void OperationComplexPersonalizado ()
 {
-    int opcao;
-    while (opcao != 0)
-    {
-        cout << " ------------------------------------------------- Escolha uma operacao ----------------------------------------------- \n" << endl;
-        cout << "0 ---> Sair\n1 ---> Soma\n2 ---> Subtracao\n3 ---> Produto\n4 ---> Razao\n\nSelecione a operacao desejada para numeros complexos: ";
-        cin >> opcao;
-        system("cls");
-        switch(opcao)
-        {
-        case 0:
-            cout << "Programa Encerrado! " << endl;
-            break;
-        case 1:
-            SomaNumeroImaginario();
-            break;
-        case 2:
-            DiferencaNumeroImaginario();
-            break;
-        case 3:
-            break;
-        case 4:
-            break;
-        default:
-            system("cls");
-            break;
-        }
-    }
+    Complexo soma;
+    Complexo difereca;
+    Complexo produto;
+    Complexo dividir;
+
+    Complexo c1 (1, 3);
+    Complexo c2 (2, 1);
+
+    cout << "First Number Complex: ";
+    c1.exibir();
+    cout << "Second Number Complex: ";
+    c2.exibir();
+    cout << endl;
+
+    soma = c1.Somar(c2);
+    difereca = c1.Subtrair(c2);
+    produto = c1.Produto(c2);
+    dividir = c1.Dividir(c2);
+
+    cout << "Sum: ";
+    soma.exibir();
+    cout << "Minus: ";
+    difereca.exibir();
+    cout << "Product: ";
+    produto.exibir();
+    cout << "Division: ";
+    dividir.exibir();
+    cout << "\nModulo 01: " << c1.Modulo();
+    cout << "\nModulo 02: " << c2.Modulo() << endl;
+
+    cout << "\nTotal elements C1: " <<  c1.visualizarContador() << endl;
+    cout << "Total elements C2: " <<  c2.visualizarContador() << endl;
 }
 
-void SomaNumeroImaginario()
+void TrianguloRetanguloValidacao ()
 {
-    int Real_0, Imaginario_0;
-    int Real_1, Imaginario_1;
-    Complexo auxiliar;
-
-    cout << "Parte Real 0 = ";
-    cin >> Real_0;
-    cout << "Parte Imaginaria 0 = ";
-    cin >> Imaginario_0;
-
-    cout << "Parte Real 1 = ";
-    cin >> Real_1;
-    cout << "Parte Imaginaria 1 = ";
-    cin >> Imaginario_1;
-
-    Complexo C0 (Real_0, Imaginario_0);
-    Complexo C1 (Real_1, Imaginario_1);
-
-    cout << "\nNumero complexo A = ";
-    C0.exibir();
-    cout << "\nNumero complexo B = ";
-    C1.exibir();
-
-    cout << "A + B: ";
-    auxiliar = C0.Somar(C1);
-    auxiliar.exibir();
+    TrianguloRetangulo TR1(4, 3, 5);
+    cout << "Lado 01: " << TR1.pegarLadoPrimeiro() << "\tLado 02: " << TR1.pegarLadoSegundo() << "\tLado 03: " << TR1.pegarLadoTerceiro() << endl;
+    cout << endl;
+    cout << "Numero de trinagulos retangulos com um dos lados menores do que cem " << endl;
+    TR1.CemPrimeirosTriangulosRetangulos();
 }
 
-void DiferencaNumeroImaginario()
+void LongNumber ()
 {
 
-    int Real_0, Imaginario_0;
-    int Real_1, Imaginario_1;
-    Complexo auxiliar;
-
-    cout << "Parte Real 0 = ";
-    cin >> Real_0;
-    cout << "Parte Imaginaria 0 = ";
-    cin >> Imaginario_0;
-
-    cout << "Parte Real 1 = ";
-    cin >> Real_1;
-    cout << "Parte Imaginaria 1 = ";
-    cin >> Imaginario_1;
-
-    Complexo C2 (Real_0, Imaginario_0);
-    Complexo C3 (Real_1, Imaginario_1);
-
-    cout << "\nNumero complexo A = ";
-    C2.exibir();
-    cout << "\nNumero complexo B = ";
-    C3.exibir();
-
-    cout << "A - B: ";
-    auxiliar = C2.Subtrair(C3);
-    auxiliar.exibir();
-}
-void ProdutoNumeroImaginario()
-{
-}
-void RazaoNumeroImaginario()
-{
-
-}
-
-void NumeroGrande()
-{
-}
-void Triangulo()
-{
 }

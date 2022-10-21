@@ -1,7 +1,13 @@
 #ifndef CLASSE_H_INCLUDED
 #define CLASSE_H_INCLUDED
 
-class Complexo {
+#include <cmath>
+#include <iostream>
+
+using namespace std;
+
+class Complexo
+{
 private:
     double Numeroreal;
     double Numeroimaginario;
@@ -9,45 +15,99 @@ private:
 public:
     Complexo();
     Complexo(double, double);
-    Complexo ( const Complexo& C) {
+
+    Complexo ( const Complexo& C)
+    {
         Numeroreal = C.Numeroreal;
         Numeroimaginario = C.Numeroimaginario;
         contador++;
     }
-    ~Complexo(void) {contador--;}
 
-    void setReal(double);
-    void setImaginario(double);
+    ~Complexo(void)
+    {
+        contador--;
+    }
 
-    double getReal() { return Numeroreal; }
-    double getImaginario() { return Numeroimaginario; }
+    void setarReal(double);
+    void setarImaginario(double);
+
+    double pegarReal()
+    {
+        return Numeroreal;
+    }
+    double pegarImaginario()
+    {
+        return Numeroimaginario;
+    }
 
     Complexo Somar (Complexo);
     Complexo Subtrair (Complexo);
     Complexo Produto (Complexo);
     Complexo Dividir (Complexo);
 
-    void exibir();
-};
+    double Modulo ()
+    {
+        return (sqrt ( pow(pegarReal(), 2) + pow(pegarImaginario(),2) ));
+    }
 
-class LongNumber {
+    friend ostream& operator<<(ostream&, const Complexo&);
+    void exibir();
+    int visualizarContador ()
+    {
+        return contador;
+    }
+};
+class LongNumber
+{
 private:
-    int numero[30];
+    int numero[31];
+    int contarNumero;
+
+    void IniciarNumeroZeros()
+    {
+        for (int i = 0; i <= 31; i++)
+        {
+            numero[i] = 0;
+        }
+    }
+
 public:
-    LongNumber();
-    LongNumber(int);
+    LongNumber()
+    {
+        IniciarNumeroZeros();
+    }
     ~LongNumber() {}
 
+    void leitura();
     void exibir();
-};
 
-class TrianguloRetangulo {
+    LongNumber Somar(LongNumber LBS);
+    LongNumber Diferenca (LongNumber LBD);
+};
+class TrianguloRetangulo
+{
 private:
+    int primeiroLado, segundoLado, terceiroLado;
 public:
     TrianguloRetangulo();
-
+    TrianguloRetangulo(int pL, int sL,int tL);
     ~TrianguloRetangulo() {}
-    void exibir();
+    friend ostream& operator<<(ostream&, const TrianguloRetangulo&);
+
+    int pegarLadoPrimeiro()
+    {
+        return primeiroLado;
+    }
+    int pegarLadoSegundo()
+    {
+        return segundoLado;
+    }
+    int pegarLadoTerceiro()
+    {
+        return terceiroLado;
+    }
+
+    void CemPrimeirosTriangulosRetangulos ();
 };
 
 #endif // CLASSE_H_INCLUDED

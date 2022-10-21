@@ -71,8 +71,10 @@ public:
         m_numerador = 1;
         m_denominador = 1;
     }
+
     CFracao(int Num, int Denom) : m_numerador(Num),
         m_denominador(Denom) { };
+
     CFracao( const CFracao& f)
     {
         m_numerador = f.m_numerador;
