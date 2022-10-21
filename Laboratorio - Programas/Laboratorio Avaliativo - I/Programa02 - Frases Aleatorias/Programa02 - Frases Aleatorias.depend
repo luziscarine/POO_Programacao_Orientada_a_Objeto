@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1514140574 source:c:\users\aluno\downloads\laboratorio avaliativo - i\programa02 - frases aleatorias\main.cpp
+	<iostream>
+
+1666381473 source:c:\users\aluno\downloads\laboratorio avaliativo - i\programa02 - frases aleatorias\frasealeatoria.cpp
+	"FraseAleatoria.h"
+
+1666381938 c:\users\aluno\downloads\laboratorio avaliativo - i\programa02 - frases aleatorias\frasealeatoria.h
+	<iostream>
+	<cstring>
+	<stdlib.h>
+

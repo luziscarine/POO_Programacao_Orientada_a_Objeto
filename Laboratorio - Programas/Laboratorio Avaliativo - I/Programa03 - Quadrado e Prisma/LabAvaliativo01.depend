@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1666380614 source:c:\users\aluno\downloads\laboratorio avaliativo - i\labavaliativo01\main.cpp
+	<iostream>
+	"PontoQuadradoPrisma.h"
+
+1666380918 source:c:\users\aluno\downloads\laboratorio avaliativo - i\labavaliativo01\pontoquadradoprisma.cpp
+	"PontoQuadradoPrisma.h"
+
+1666380418 c:\users\aluno\downloads\laboratorio avaliativo - i\labavaliativo01\pontoquadradoprisma.h
+	<iostream>
+
+1666380918 source:c:\users\aluno\downloads\laboratorio avaliativo - i\programa03 - quadrado e prisma\pontoquadradoprisma.cpp
+	"PontoQuadradoPrisma.h"
+
+1666384165 c:\users\aluno\downloads\laboratorio avaliativo - i\programa03 - quadrado e prisma\pontoquadradoprisma.h
+	<iostream>
+
+1666384094 source:c:\users\aluno\downloads\laboratorio avaliativo - i\programa03 - quadrado e prisma\main.cpp
+	<iostream>
+	"PontoQuadradoPrisma.h"
+
