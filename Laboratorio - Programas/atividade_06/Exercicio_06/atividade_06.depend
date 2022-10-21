@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1665718576 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_06\exercicio_06\atividade_06\main.cpp
+	<iostream>
+	<cmath>
+	"classe.h"
+
+1665717185 c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_06\exercicio_06\atividade_06\classe.h
+	<iostream>
+	<stdlib.h>
+	<cstring>
+
+1665712248 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_06\exercicio_06\atividade_06\politico.cpp
+	"classe.h"
+
+1665717473 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_06\exercicio_06\atividade_06\dimensoestriplas.cpp
+	"classe.h"
+
+1665895891 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_06\exercicio_06\dimensoestriplas.cpp
+	"classe.h"
+
+1665965149 c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_06\exercicio_06\classe.h
+	<iostream>
+	<stdlib.h>
+	<cstring>
+	<cmath>
+
+1665712248 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_06\exercicio_06\politico.cpp
+	"classe.h"
+
+1665899505 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_06\exercicio_06\main.cpp
+	<iostream>
+	<cmath>
+	"classe.h"
+
+1665898983 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_06\exercicio_06\polinomio.cpp
+	"classe.h"
+
+1665965162 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_06\exercicio_06\numerotelefone.cpp
+	"classe.h"
+

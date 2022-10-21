@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1665770846 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_05\atividade_05\atividade_05\main.cpp
+	<iostream>
+	"classe.h"
+
+1665761474 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_05\atividade_05\atividade_05\polinomio.cpp
+	"classe.h"
+
+1665770364 c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_05\atividade_05\atividade_05\classe.h
+	<iostream>
+	<stdlib.h>
+	<cmath>
+
+1665769910 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_05\atividade_05\atividade_05\pontocartesiano.cpp
+	"classe.h"
+

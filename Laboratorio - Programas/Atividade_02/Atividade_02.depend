@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1662848355 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_02\atividade_02\main.cpp
+	<iostream>
+	"retangulo.h"
+
+1662934083 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_02\atividade_02\retangulo.cpp
+	<iostream>
+	"retangulo.h"
+
+1662848369 c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_02\atividade_02\retangulo.h
+
+1663296620 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_02\main.cpp
+	<iostream>
+	"retangulo.h"
+
+1663005806 c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_02\retangulo.h
+	<string>
+	<iostream>
+
+1663291681 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_02\retangulo.cpp
+	<iostream>
+	"retangulo.h"
+
+1662950154 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_02\poligonoregular.cpp
+	<iostream>
+	"retangulo.h"
+	"cmath"
+	<string>
+
+1662949505 c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_02\atividade_02_classes.h
+	<string>
+	<iostream>
+
+1662950453 source:c:\users\breno\desktop\programação orientada a objeto (poo)\laboratorio\atividade_02\cfracao.cpp
+	"retangulo.h"
+	<iostream>
+
