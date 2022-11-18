@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 #include <stack>
+#include <stdio.h>
 #include <stdlib.h>
 
 void menuPilha();
@@ -16,7 +17,7 @@ int main()
 {
     menuPilha();
 
-    getchar();
+    system("pause");
     return 0;
 
 }
@@ -77,16 +78,23 @@ void PilhaInserir()
 
 void PilhaTopo()
 {
-    cout << "Elemento do topo da pilha: ";
-    cout << pilha.top() << endl;
+    if (pilha.empty())
+    {
+        cout << "Pilha vazia, elemento do topo: nulo!" << endl;
+    }
+    else
+    {
+        cout << "Elemento do topo da pilha: ";
+        cout << pilha.top() << endl;
+    }
 }
 
 void PilhaRemover()
 {
     if (!pilha.empty())
     {
-    pilha.pop();
-    cout << "Elemento removido!" << endl;
+        pilha.pop();
+        cout << "Elemento removido!" << endl;
     }
     else
     {
@@ -114,7 +122,7 @@ void TamanhoPilha()
 {
     if (!pilha.empty())
     {
-    cout << "O tamanho da pilha e: " << pilha.size() << endl;
+        cout << "O tamanho da pilha e: " << pilha.size() << endl;
     }
     else
     {
