@@ -4,7 +4,7 @@ using namespace std;
 #include <stdlib.h>
 #include <stdio.h>
 
-list<int> lista;
+list<int> lista = {1, 2, 3, 4, 6, 6, 6, 7, 7, 9, 0, 1, 8};
 
 void menuLista();
 void ListaInserirFrente();
@@ -17,6 +17,8 @@ void ListaTamanho();
 void ListaPernonalElementosExcluir();
 void ListaValoresDuplicadosExcluir();
 void ListaOrdenar();
+void ListaRedimensionar();
+void ListaReverterOrdem();
 
 int main()
 {
@@ -71,6 +73,9 @@ void menuLista()
         case 7:
             ListaTamanho();
             break;
+        case 8:
+            ListaRedimensionar();
+            break;
         case 9:
             ListaPernonalElementosExcluir();
             break;
@@ -78,6 +83,9 @@ void menuLista()
             ListaValoresDuplicadosExcluir();
             break;
         case 11:
+            ListaReverterOrdem();
+            break;
+        case 12:
             ListaOrdenar();
             break;
         case 13:
@@ -96,7 +104,11 @@ void ListaInserirFrente()
     cout << "Insira um elemento na frente da fila: ";
     cin >> e;
     lista.push_front(e);
-    cout << "\nElemento inserido!" << endl;
+    cout << "\nElemento inserido!" << endl << endl << "Lista: " ;
+    for (auto x:lista)
+    {
+        cout << "" << x << " ";
+    }
     fflush(stdin);
     getchar();
     system("cls");
@@ -107,7 +119,11 @@ void ListaInserirTras()
     cout << "Insira um elemento de tras da fila: ";
     cin >> e;
     lista.push_back(e);
-    cout << "\nElemento inserido!" << endl;
+    cout << "\nElemento inserido!" << endl << endl;
+    for (auto x:lista)
+    {
+        cout << x << "\t";
+    }
     fflush(stdin);
     getchar();
     system("cls");
@@ -115,7 +131,11 @@ void ListaInserirTras()
 void ListaExcluirFrente()
 {
     lista.pop_front();
-    cout << "\nElemento excluido!" << endl;
+    cout << "\nElemento excluido!" << endl << endl;
+    for (auto x:lista)
+    {
+        cout << x << "\t";
+    }
     fflush(stdin);
     getchar();
     system("cls");
@@ -123,7 +143,11 @@ void ListaExcluirFrente()
 void ListaExcluirTras()
 {
     lista.pop_front();
-    cout << "\nElemento inserido!" << endl;
+    cout << "\nElemento inserido!" << endl << endl;
+    for (auto x:lista)
+    {
+        cout << x << "\t";
+    }
     fflush(stdin);
     getchar();
     system("cls");
@@ -131,7 +155,11 @@ void ListaExcluirTras()
 
 void ListaPrimeiroElemento()
 {
-    cout << lista.front() << endl;
+    cout << lista.front() << endl << endl;
+    for (auto x:lista)
+    {
+        cout << x << "\t";
+    }
     fflush(stdin);
     getchar();
     system("cls");
@@ -139,7 +167,11 @@ void ListaPrimeiroElemento()
 
 void ListaUltimoElemento()
 {
-    cout << lista.back() << endl;
+    cout << lista.back() << endl << endl;
+    for (auto x:lista)
+    {
+        cout << x << "\t";
+    }
     fflush(stdin);
     getchar();
     system("cls");
@@ -147,7 +179,27 @@ void ListaUltimoElemento()
 
 void ListaTamanho()
 {
-    cout << "Tamanho da lista: " << lista.size() << endl;
+    cout << "Tamanho da lista: " << lista.size() << endl << endl;
+    for (auto x:lista)
+    {
+        cout << x << "\t";
+    }
+    fflush(stdin);
+    getchar();
+    system("cls");
+}
+
+void ListaRedimensionar()
+{
+    int e;
+    cout << "Redimensione o tamanho da lista: ";
+    cin >> e;
+    lista.resize(e);
+    cout << endl << endl;
+    for (auto x:lista)
+    {
+        cout << x << "\t";
+    }
     fflush(stdin);
     getchar();
     system("cls");
@@ -156,18 +208,41 @@ void ListaTamanho()
 void ListaPernonalElementosExcluir()
 {
     int e;
-    cout << "Escolha um elemento para ser excluido da fila: ";
+    cout << "Remova elementos repetidos: " << endl;
     cin >> e;
-    //lista.remove(const int& e);
+    lista.remove(e);
+    cout << "Itens removidos!" << endl << endl;
+    for (auto x:lista)
+    {
+        cout << x << "\t";
+    }
+
     fflush(stdin);
     getchar();
     system("cls");
 }
 void ListaValoresDuplicadosExcluir()
 {
-    int e;
-    cout << "Escolha um elemento duplicado para ser excluido da fila: ";
-    cin >> e;
+    lista.unique();
+    cout << "Itens repetidos removidos!" << endl << endl;
+    for (auto x:lista)
+    {
+        cout << x << "\t";
+    }
+
+    fflush(stdin);
+    getchar();
+    system("cls");
+}
+
+void ListaReverterOrdem()
+{
+    lista.reverse();
+    cout << endl<< endl;
+    for (auto x:lista)
+    {
+        cout << x << "\t";
+    }
     fflush(stdin);
     getchar();
     system("cls");
@@ -176,6 +251,11 @@ void ListaValoresDuplicadosExcluir()
 void ListaOrdenar()
 {
     lista.sort();
+    cout << "Lista Ordenada!" << endl << endl;
+    for (auto x:lista)
+    {
+        cout << x << "\t";
+    }
     fflush(stdin);
     getchar();
     system("cls");
